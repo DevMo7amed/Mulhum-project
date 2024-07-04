@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/Exhibitions.css">
+    <title>المعارض والمؤتمرات | AR</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="../photos/logo.jpg" alt="logo">
+        <div class="menuToggle"></div>
+        <nav>
+            <ul>
+                <li><a href="../CV.html">CV</a></li>
+                
+                </li>
+                <li><a href="#">اللغات</a>
+                    <ul class="lang">
+                        <li><a href="../index.html" class="language-option"><img src="../photos/Saudia.png" alt="USA Flag">العربيه</a></li>
+                        <li><a href="../home_EN.html" class="language-option"><img src="../photos/En.png" alt="USA Flag">الانجليزيه</a></li>
+                        <li><a href="../home_FR.html" class="language-option"><img src="../photos/FR.png" alt="France Flag">الفرنسيه</a></li>                        
+                    </ul>
+                </li>
+                <li><a href="../section_AR.html">الاقسام</a>
+                <li><a href="../index.html">الصفحه الرئيسيه</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class='componentWrapper'>
+        <div class="hed_text">معرض الدفاع العالمي</div>
+           <div class="contentArabic_ar">
+                    <p>
+                        يعد معرض الدفاع العالمي الذي تنظمه الهيئه العامه للصناعات العسكريه في المملكه العربية السعوديةمعرضا متكاملا,
+                          حيث يتمحور حول مستقبل صناعة الدفاع عبر استعراض أحدث التطورات التقنية
+                          . التي توصل لها العالم عبر مختلف قطاعات الدفاع البري والبحري والجوي زالفضاء والأمن
+
+                    </p>
+           </div>
+    </div>
+
+    <script src="../CSS/swiper-bundle.min.css"></script>
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function()
+        {
+            header.classList.toggle('active');
+        }
+    </script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/Exhibitions.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="../photos/logo.jpg" alt="logo">
+        <div class="menuToggle"></div>
+        <nav>
+            <ul>
+                <li><a href="../home_FR.html">page principale</a></li>
+                <li><a href="../sectionsFR.html">Sections</a></li>
+                <li><a href="#">langues</a>
+                    <ul class="lang">
+                      <li><a href="../index.html" class="language-option"><img src="../photos/Saudia.png" alt="USA Flag">العربيه</a></li>
+                        <li><a href="../home_EN.html" class="language-option"><img src="../photos/england.jpg" alt="USA Flag">Anglaise</a></li>
+                        <li><a href="../home_FR.html" class="language-option"><img src="../photos/france.png" alt="France Flag">France</a></li>
+                    </ul>
+                </li>
+                <li><a href="../CV.html">sur moi</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class='componentWrapper'>
+        <div class="hed_text"> Salon international de la défense</div>
+           <div class="contentEnglish_en">
+                    <p>
+                        L'Exposition mondiale de la défense, organisée par l'Autorité générale des industries militaires du Royaume d'Arabie saoudite, est une exposition intégrée qui se concentre sur l'avenir de l'industrie de la défense en présentant les derniers développements techniques. Ce que le monde a réalisé à travers divers secteurs de la défense terrestre, maritime, aérienne, spatiale et de sécurité.
+                    </p>
+           </div>
+    </div>
+
+    <script src="../CSS/swiper-bundle.min.css"></script>
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function()
+        {
+            header.classList.toggle('active');
+        }
+    </script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+</body>
+</html>
